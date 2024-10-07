@@ -7,10 +7,26 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1024px",
+    },
+    fontFamily: {
+      primary: "var(--primary)",
+      secondary: "var(--secondary)",
+      third: "var(--third)",
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#172A3A",
+        foreground: "#002729",
+        border: "#CEBF1A",
+        text: {
+          primary: "#FFFFFF",
+          secondary: "#CEBF1A",
+        },
       },
     },
   },
